@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.mainBox{
+    height: 300px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.childBox{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 80ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.childBox:hover {
+    background-color: grey;
+    border-radius: 50%;
+    transition: 1s;
+    transform: scale(1.2);
+    font-size: large;
+}
+
+
