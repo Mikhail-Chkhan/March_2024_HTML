@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height: 15vh;
+}
+.flex {
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+}
+nav, aside {
+    width: 33.3vw;
+    background-color: #78786F;
+}
+article {
+    width: 33.4vw;
+    background-color: #61615C;
+}
+footer {
+    height: 20vh;
+}

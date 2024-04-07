@@ -1,24 +1,40 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
+
 }
-header {
-    height: 15vh;
-}
-.flex {
-    height: 65vh;
+.page {
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-nav, aside {
-    width: 33.3vw;
-    background-color: #78786F;
+#red {
+    background-color: red;
 }
-article {
-    width: 33.4vw;
-    background-color: #61615C;
+#aqua {
+    background-color: aqua;
 }
-footer {
-    height: 20vh;
+#green {
+    background-color: green;
+}
+
+
+h1 {
+    font-size: 4em;
+
+}
+p {
+    margin: 10px 50px;
+    font-size: 3em;
+}
+a {
+    font-size: 5em;
+    text-decoration: none;
+    color: black;
 }
