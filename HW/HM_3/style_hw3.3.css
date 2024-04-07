@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    height: 10vh;
+}
+section {
+    height: 20vh;
+    background-color: #C2C4AC;
+}
+.flex {
+    height: 60vh;
+    display: flex;
+    flex-direction: row; /* Попробовал новый параметр вместо justify-content: space-around; */
+}
+nav, aside {
+    width: 19.5vw;
+    background-color: #9EA087
+}
+article {
+    width: 61vw;
+    background-color: #78786F;
+}
