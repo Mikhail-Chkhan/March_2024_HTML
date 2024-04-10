@@ -114,7 +114,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgba(83, 83, 83, 0.40);
-    font-family: "KoHo";
+    font-family: "KoHo", sans-serif;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
