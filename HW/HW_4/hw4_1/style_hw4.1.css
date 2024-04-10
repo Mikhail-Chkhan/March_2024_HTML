@@ -81,6 +81,7 @@ body {
 .video {
     width: 949px;
     height: 533px;
+    /*margin: 25px 25px;*/
 }
 
 .content {
