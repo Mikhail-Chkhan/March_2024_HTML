@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .box {
+        height: 95vh;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "article";
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: 100fr;
+        grid-gap: 15px;
+    }
+
+    header, main, article {
+        border: 1px solid;
+        border-radius: 10px;
+
+    }
+}

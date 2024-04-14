@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 10px;
+}
+header, article, #one, #two, #three, aside {
+    font-size: 35px;
+    background-color: #8E8E8E;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 97vh;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main aside";
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+.content {
+    display: grid;
+    height: 100%;
+    grid-template-areas:
+    "article article article"
+    "card_one card_two card_three";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+article {
+    grid-area: article;
+}
+#one {
+    grid-area: card_one;
+}
+#two {
+    grid-area: card_two;
+}
+#three {
+    grid-area: card_three;
+}
