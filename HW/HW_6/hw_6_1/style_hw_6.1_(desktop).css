@@ -1,0 +1,85 @@
+/*-----------GENERAL STRUCTURE-----------*/
+body {
+    margin: 0;
+    padding: 10px;
+}
+.boxLink, header, .boxArticle, footer {
+    background-color: #55a9f6;
+}
+.boxLink {
+    height: 65px;
+    width: 135px;
+    margin: 0 5px;
+}
+span {
+    color: white;
+}
+.mainBox {
+    height: 97vh;
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "banner"
+        "article"
+        "footer";
+    grid-template-rows: 65px 1fr 2fr 70px;
+    grid-gap: 10px;
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+
+}
+header {
+    grid-area: banner;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+footer {
+    grid-area: footer;
+}
+article {
+    grid-area: article;
+    display: grid;
+    height: 100%;
+    grid-template-areas:
+    "article_1 article_2"
+    "article_3 article_4";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+#article_1 {
+    grid-area: article_1;
+}
+#article_2 {
+    grid-area: article_2;
+}
+#article_3 {
+    grid-area: article_3;
+}
+#article_4 {
+    grid-area: article_4;
+}
+
+
+article>div {
+    border-radius: 10px;
+}
+footer, nav>.boxLink {
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+header, article>div {
+    display: flex;
+    justify-content: right;
+    font-size: 40px;
+}
+header>span, article>div>span {
+    margin: 30px 20px;
+}
+

@@ -1,0 +1,21 @@
+@media screen and (max-width: 800px) {
+    article {
+        grid-area: article;
+        display: grid;
+        height: 100%;
+        grid-template-areas:
+    "article_1 article_2 article_3 article_4";
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    article>div>span {
+
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg) translateY(0);
+    }
+    article>.boxArticle {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}

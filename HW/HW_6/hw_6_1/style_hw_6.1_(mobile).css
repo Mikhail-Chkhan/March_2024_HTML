@@ -1,0 +1,41 @@
+@media screen and (max-width: 600px) {
+    .mainBox {
+        height: 95vh;
+        display: grid;
+        grid-template-rows: 310px 150px 450px 95px;
+        grid-gap: 0;
+    }
+    article {
+        grid-area: article;
+        display: grid;
+        height: 100%;
+        grid-template-areas:
+            "article_1"
+            "article_2"
+            "article_3"
+            "article_4";
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+    }
+    .boxLink {
+        height: 65px;
+        width: 95vw;
+        margin: 5px 0;
+    }
+    article>div>span {
+
+        writing-mode: horizontal-tb;
+        transform: rotate(0) translateY(0);
+    }
+    nav {
+        flex-direction: column;
+    }
+    footer {
+        margin: 15px 0 15px;
+    }
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
